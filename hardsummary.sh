@@ -47,7 +47,7 @@ function bios(){
 }
 
 function battery(){
-    echo -e "\n*************** BIOS *************** \n"
+    echo -e "\n*************** BATTERY *************** \n"
     sudo dmidecode -t 22 | grep -E "Location|Manufacturer|Name|Desig|Chemistry"
 }
 
@@ -67,5 +67,5 @@ function display(){
     echo -e " ********* END OF REPORT ********* \n"
 }
 
-display
+display> ./hard_short_report.txt
 
